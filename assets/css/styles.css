@@ -1,3 +1,12 @@
+                        /* Remove fundo branco visual de logos PNG e destaca com sombra */
+                        .logo-img {
+                            background: transparent !important;
+                            border-radius: 50%;
+                            box-shadow: 0 4px 24px 0 #10b98155, 0 1.5px 8px #3b82f655;
+                            border: 2px solid #fff2;
+                            padding: 0;
+                            display: inline-block;
+                        }
                         /* Fundo de moringa para sections */
                         /* Overlay escuro para contraste */
                         .overlay-dark {
