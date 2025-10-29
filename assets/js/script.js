@@ -39,12 +39,12 @@
             if (currentQuestion < quizQuestions.length) {
                 const q = quizQuestions[currentQuestion];
                 quizContent.innerHTML = `
-                    <div class="bg-blue-50 p-6 rounded-xl">
+                    <div class="bg-blue-900 p-6 rounded-xl text-white">
                         <p class="font-semibold mb-4">Pergunta ${currentQuestion + 1}/${quizQuestions.length}</p>
                         <p class="text-lg mb-4">${q.question}</p>
                         <div class="space-y-2">
                             ${q.options.map((opt, i) => `
-                                <button onclick="checkAnswer(${i})" class="w-full bg-white hover:bg-blue-100 px-4 py-3 rounded-lg text-left border-2 border-blue-200 transition">
+                                <button onclick="checkAnswer(${i})" class="w-full bg-blue-800 hover:bg-blue-700 px-4 py-3 rounded-lg text-left border-2 border-blue-600 text-white transition">
                                     ${opt}
                                 </button>
                             `).join('')}
@@ -68,11 +68,11 @@
             const quizContent = document.getElementById('quiz-content');
             const percentage = Math.round((score / quizQuestions.length) * 100);
             quizContent.innerHTML = `
-                <div class="bg-green-50 p-6 rounded-xl text-center">
+                <div class="bg-green-900 p-6 rounded-xl text-center text-white">
                     <div class="text-5xl mb-4">🎉</div>
                     <p class="text-2xl font-bold mb-2">Resultado</p>
                     <p class="text-xl mb-4">Você acertou ${score} de ${quizQuestions.length} perguntas!</p>
-                    <div class="text-4xl font-bold text-green-600 mb-4">${percentage}%</div>
+                    <div class="text-4xl font-bold text-green-300 mb-4">${percentage}%</div>
                     <button onclick="startQuiz()" class="bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-600 transition">
                         Tentar Novamente
                     </button>

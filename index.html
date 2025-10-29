@@ -17,25 +17,36 @@
 
     <!-- Navbar Fixa -->
     <nav class="navbar-blur fixed top-0 left-0 right-0 z-50 shadow-md">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between flex-wrap gap-4">
-                <div class="flex items-center gap-3">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between flex-wrap">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3">
                     <img src="assets/img/logo.png" alt="Logo Raízes do Futuro" class="h-16 w-16 md:h-20 md:w-20 logo-img" style="object-fit:contain;" />
                     <span class="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent tracking-tight drop-shadow-lg">Raízes do Futuro</span>
-                </div>
-                <div class="flex flex-wrap gap-2 md:gap-4 text-sm md:text-base font-medium">
-                    <a href="index.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Início</a>
-                    <a href="pages/sobre.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Sobre</a>
-                    <a href="pages/justificativa.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Justificativa</a>
-                    <a href="pages/objetivos.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Objetivos</a>
-                    <a href="pages/ciencia.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Ciência</a>
-                    <a href="pages/sprints.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Sprints</a>
-                    <a href="pages/resultados.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Resultados</a>
-                    <a href="pages/creditos.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Créditos</a>
-                </div>
+                </a>
+            </div>
+            <button id="menu-toggle" class="md:hidden block text-3xl focus:outline-none" aria-label="Abrir menu">☰</button>
+            <div id="main-menu" class="w-full md:w-auto flex-col md:flex-row flex gap-2 md:gap-4 text-sm md:text-base font-medium hidden md:flex bg-gray-900 md:bg-transparent rounded-xl md:rounded-none p-4 md:p-0 mt-4 md:mt-0">
+                <a href="index.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Início</a>
+                <a href="pages/sobre.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Sobre</a>
+                <a href="pages/justificativa.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Justificativa</a>
+                <a href="pages/objetivos.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Objetivos</a>
+                <a href="pages/ciencia.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Ciência</a>
+                <a href="pages/sprints.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Sprints</a>
+                <a href="pages/resultados.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Resultados</a>
+                <a href="pages/creditos.html" class="hover:text-green-500 transition-colors duration-200 px-3 py-1 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-400">Créditos</a>
             </div>
         </div>
     </nav>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainMenu = document.getElementById('main-menu');
+        menuToggle.addEventListener('click', function() {
+            mainMenu.classList.toggle('hidden');
+        });
+    });
+</script>
 
     <!-- 1. PÁGINA INICIAL -->
     <section id="home" class="gradient-hero min-h-screen flex items-center justify-center text-white pt-20 px-6 relative" style="--hero-overlay: 0.10;">
@@ -237,22 +248,22 @@
                         <div class="bg-green-900/80 p-4 rounded-lg border-l-4 border-green-400">
                             <strong>1.</strong> Seque as sementes de moringa ao sol
                         </div>
-                        <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
                             <strong>2.</strong> Remova a casca externa das sementes
                         </div>
-                        <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
                             <strong>3.</strong> Triture as sementes até formar um pó fino
                         </div>
-                        <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
                             <strong>4.</strong> Use 2 gramas de pó para cada litro de água
                         </div>
-                        <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
                             <strong>5.</strong> Misture vigorosamente por 2 minutos
                         </div>
-                        <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
                             <strong>6.</strong> Deixe descansar por 1 hora
                         </div>
-                        <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
                             <strong>7.</strong> Filtre a água antes de consumir
                         </div>
                     </div>
