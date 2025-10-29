@@ -81,6 +81,10 @@
             <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center">
                 💧 Sobre o Projeto
             </h2>
+            <div class="flex flex-col md:flex-row gap-8 items-center mb-8">
+                <img src="assets/img/fachada.jpg" alt="Fachada da escola" class="rounded-2xl shadow-lg w-full md:w-1/2 object-cover max-h-72" loading="lazy" />
+                <img src="assets/img/equipe.jpg" alt="Equipe Raízes do Futuro" class="rounded-2xl shadow-lg w-full md:w-1/2 object-cover max-h-72" loading="lazy" />
+            </div>
             <div class="space-y-6 text-lg leading-relaxed text-white">
                 <p>
                     O projeto <strong>Raízes do Futuro</strong> defende a purificação da água utilizando as sementes da moringa oleifera, uma planta com propriedades naturais de coagulação e clarificação da água.
@@ -122,25 +126,26 @@
             
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="bg-white/10 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 text-white">
+                <div class="bg-white/10 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 text-white flex flex-col items-center">
+                    <img src="assets/img/experimento.jpg" alt="Experimento científico" class="rounded-xl mb-4 w-full object-cover max-h-40" loading="lazy" />
                     <div class="text-5xl mb-4">🔬</div>
                     <h3 class="text-2xl font-bold mb-4 text-green-200">1. Estudo Científico</h3>
                     <p class="text-white">
                         Pesquisa aprofundada sobre as propriedades da moringa e análise da qualidade da água em nossa região.
                     </p>
                 </div>
-                
                 <!-- Card 2 -->
-                <div class="bg-white/10 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 text-white">
+                <div class="bg-white/10 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 text-white flex flex-col items-center">
+                    <img src="assets/img/pote.jpg" alt="Pote com experimento" class="rounded-xl mb-4 w-full object-cover max-h-40" loading="lazy" />
                     <div class="text-5xl mb-4">🧪</div>
                     <h3 class="text-2xl font-bold mb-4 text-blue-200">2. Teste Prático</h3>
                     <p class="text-white">
                         Realização de experimentos controlados para validar a eficácia da purificação da água com sementes de moringa.
                     </p>
                 </div>
-                
                 <!-- Card 3 -->
-                <div class="bg-white/10 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 text-white">
+                <div class="bg-white/10 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 text-white flex flex-col items-center">
+                    <img src="assets/img/planta.jpg" alt="Moringa planta" class="rounded-xl mb-4 w-full object-cover max-h-40" loading="lazy" />
                     <div class="text-5xl mb-4">💻</div>
                     <h3 class="text-2xl font-bold mb-4 text-purple-200">3. Tecnologia Educativa</h3>
                     <p class="text-white">
@@ -222,92 +227,48 @@
         </div>
     </section>
 
-    <!-- 5. PROTÓTIPO DIGITAL -->
-    <section id="prototipo" class="gradient-section py-20 px-6 overlay-dark text-white">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
-                🧪 Protótipo Digital – "Água Viva"
-            </h2>
-            <p class="text-center text-xl mb-12 text-white">
-                Simulação do app/site educativo
-            </p>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1: Purifique sua água -->
-                <div class="bg-white/10 p-8 rounded-2xl shadow-xl text-white">
-                    <div class="text-5xl mb-4">💧</div>
-                    <h3 class="text-2xl font-bold mb-4 text-green-200">Purifique sua água</h3>
-                    <p class="text-white mb-6">
-                        Aprenda o passo a passo do uso da semente de moringa para limpar água turva.
-                    </p>
-                    <button onclick="toggleSteps()" class="bg-green-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-600 transition w-full">
-                        Ver passo a passo
-                    </button>
-                    
-                    <div id="steps-content" class="expandable-content mt-6 space-y-4">
-                        <div class="bg-green-900/80 p-4 rounded-lg border-l-4 border-green-400">
-                            <strong>1.</strong> Seque as sementes de moringa ao sol
-                        </div>
-                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
-                            <strong>2.</strong> Remova a casca externa das sementes
-                        </div>
-                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
-                            <strong>3.</strong> Triture as sementes até formar um pó fino
-                        </div>
-                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
-                            <strong>4.</strong> Use 2 gramas de pó para cada litro de água
-                        </div>
-                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
-                            <strong>5.</strong> Misture vigorosamente por 2 minutos
-                        </div>
-                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
-                            <strong>6.</strong> Deixe descansar por 1 hora
-                        </div>
-                        <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-400 text-white">
-                            <strong>7.</strong> Filtre a água antes de consumir
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Card 2: Quiz Sustentável -->
-                <div class="bg-white/10 p-8 rounded-2xl shadow-xl text-white">
-                    <div class="text-5xl mb-4">🎯</div>
-                    <h3 class="text-2xl font-bold mb-4 text-blue-200">Quiz Sustentável</h3>
-                    <p class="text-white mb-6">
-                        Teste seus conhecimentos sobre água, moringa e sustentabilidade.
-                    </p>
-                    <button onclick="startQuiz()" class="bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-600 transition w-full">
-                        Começar Quiz
-                    </button>
-                    
-                    <div id="quiz-content" class="expandable-content mt-6"></div>
-                </div>
-                
-                <!-- Card 3: Mapa Verde -->
-                <div class="bg-white/10 p-8 rounded-2xl shadow-xl text-white">
-                    <div class="text-5xl mb-4">🗺️</div>
-                    <h3 class="text-2xl font-bold mb-4 text-green-200">Mapa Verde</h3>
-                    <p class="text-white mb-6">
-                        Locais onde a moringa está sendo cultivada
-                    </p>
-                    
-                    <div class="relative bg-gradient-to-br from-green-100 to-blue-100 h-64 rounded-xl overflow-hidden border-2 border-green-200">
-                        <div class="absolute top-1/4 left-1/3 map-pin" title="Colégio Estadual Conselheiro Carrão"></div>
-                        <div class="absolute top-1/2 left-1/2 map-pin" title="Praça Central"></div>
-                        <div class="absolute top-2/3 left-1/4 map-pin" title="Horta Comunitária"></div>
-                        <div class="absolute top-1/3 left-2/3 map-pin" title="Centro de Ciências"></div>
-                        
-                        <div class="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-sm p-3 rounded-lg text-sm text-white">
-                            <p class="font-semibold">📍 4 locais de cultivo ativos</p>
-                            <p class="text-xs text-white mt-1">Escola, praças e hortas comunitárias</p>
-                        </div>
-                    </div>
+    <section class="pt-24 pb-16 px-4 max-w-5xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold mb-8 text-center">🧪 Protótipo Digital – "Água Viva"</h1>
+        <p class="text-center text-xl mb-12 text-white">Simulação do app/site educativo</p>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1: Purifique sua água -->
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-xl text-white">
+                <div class="text-5xl mb-4">💧</div>
+                <h3 class="text-2xl font-bold mb-4 text-green-300">Purifique a sua água</h3>
+                <p class="text-white mb-6">Veja como usar a semente de moringa para purificar água de forma simples e segura:</p>
+                <button id="btn-steps" class="bg-green-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-600 transition w-full">Ver passo a passo</button>
+                <div id="steps-content" class="expandable-content mt-6 space-y-4">
+                    <div class="bg-green-700 p-4 rounded-lg border-l-4 border-green-400 text-white"><strong>1️⃣ Prepare as sementes</strong><br>Descasque as sementes de moringa e triture-as (com pilão, martelo ou liquidificador) até virarem um pó ou pasta fina.</div>
+                    <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-500 text-white"><strong>2️⃣ Misture com a água</strong><br>Adicione a pasta ou o pó à água suja.<br>Use de 1 a 3 sementes por litro de água pouco barrenta.<br>Se a água estiver muito suja, aumente a quantidade.</div>
+                    <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-500 text-white"><strong>3️⃣ Agite bem</strong><br>Misture vigorosamente por cerca de 2 minutos para ativar o processo de purificação.</div>
+                    <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-500 text-white"><strong>4️⃣ Deixe decantar</strong><br>Deixe a mistura em repouso por um tempo.<br>As impurezas e bactérias vão se depositar no fundo do recipiente.</div>
+                    <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-500 text-white"><strong>5️⃣ Coe a água</strong><br>Após a decantação, coe a água com um pano de algodão limpo para remover as partículas maiores.</div>
+                    <div class="bg-green-800 p-4 rounded-lg border-l-4 border-green-500 text-white"><strong>6️⃣ Ferva para beber</strong><br>Por segurança, ferva a água antes de consumir.<br>Isso inativa as lectinas e elimina micro-organismos que possam ter restado.</div>
                 </div>
             </div>
-            <div class="flex justify-center mt-10">
-                <a href="pages/prototipo.html" class="bg-gradient-to-r from-green-400 to-blue-500 text-white px-8 py-3 rounded-xl font-bold shadow-lg hover:shadow-2xl transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300">
-                    Saiba mais
-                </a>
+            <!-- Card 2: Quiz Sustentável -->
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-xl text-white">
+                <div class="text-5xl mb-4">🎯</div>
+                <h3 class="text-2xl font-bold mb-4 text-blue-300">Quiz Sustentável</h3>
+                <p class="text-white mb-6">Teste seus conhecimentos sobre água, moringa e sustentabilidade.</p>
+                <button id="btn-quiz" class="bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-600 transition w-full">Começar Quiz</button>
+                <div id="quiz-content" class="expandable-content mt-6"></div>
+            </div>
+            <!-- Card 3: Mapa Verde -->
+            <div class="bg-white/10 p-8 rounded-2xl shadow-xl text-white">
+                <div class="text-5xl mb-4">🗺️</div>
+                <h3 class="text-2xl font-bold mb-4 text-green-200">Mapa Verde</h3>
+                <p class="text-white mb-6">Locais onde a moringa está sendo cultivada</p>
+                <div class="relative bg-gradient-to-br from-green-100 to-blue-100 h-64 rounded-xl overflow-hidden border-2 border-green-200">
+                    <div class="absolute top-1/4 left-1/3 map-pin" title="Colégio Estadual Conselheiro Carrão"></div>
+                    <div class="absolute top-1/2 left-1/2 map-pin" title="Praça Central"></div>
+                    <div class="absolute top-2/3 left-1/4 map-pin" title="Horta Comunitária"></div>
+                    <div class="absolute top-1/3 left-2/3 map-pin" title="Centro de Ciências"></div>
+                    <div class="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-sm p-3 rounded-lg text-sm text-white">
+                        <p class="font-semibold">📍 4 locais de cultivo ativos</p>
+                        <p class="text-xs text-white mt-1">Escola, praças e hortas comunitárias</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -321,15 +282,9 @@
             
             <!-- Fotos Placeholder -->
             <div class="grid md:grid-cols-3 gap-6 mb-12">
-                <div class="bg-gradient-to-br from-green-900 to-blue-900 h-64 rounded-2xl shadow-lg flex items-center justify-center text-6xl text-white">
-                    🌱
-                </div>
-                <div class="bg-gradient-to-br from-blue-900 to-purple-900 h-64 rounded-2xl shadow-lg flex items-center justify-center text-6xl text-white">
-                    💧
-                </div>
-                <div class="bg-gradient-to-br from-purple-900 to-green-900 h-64 rounded-2xl shadow-lg flex items-center justify-center text-6xl text-white">
-                    🎓
-                </div>
+                <img src="assets/img/local.jpg" alt="Local do projeto" class="h-64 w-full object-cover rounded-2xl shadow-lg" loading="lazy" />
+                <img src="assets/img/planta.jpg" alt="Moringa planta" class="h-64 w-full object-cover rounded-2xl shadow-lg" loading="lazy" />
+                <img src="assets/img/equipe.jpg" alt="Equipe Raízes do Futuro" class="h-64 w-full object-cover rounded-2xl shadow-lg" loading="lazy" />
             </div>
             
             <!-- Depoimentos -->
@@ -562,7 +517,33 @@ window.addEventListener('scroll', () => {
     }
 });
 </script>
+    <script>
+    // Menu mobile toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainMenu = document.getElementById('main-menu');
+        menuToggle.addEventListener('click', function() {
+            mainMenu.classList.toggle('hidden');
+        });
 
+        // Passo a passo toggle
+        const btnSteps = document.getElementById('btn-steps');
+        const stepsContent = document.getElementById('steps-content');
+        if (btnSteps && stepsContent) {
+            btnSteps.addEventListener('click', function() {
+                stepsContent.classList.toggle('active');
+            });
+        }
+
+        // Quiz
+        const btnQuiz = document.getElementById('btn-quiz');
+        if (btnQuiz) {
+            btnQuiz.addEventListener('click', function() {
+                startQuiz();
+            });
+        }
+    });
+    </script>
 
 </body>
 </html>
